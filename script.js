@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
       .attr("data-category", d => d.data.category)
       .attr("data-value", d => d.data.value)
       .attr("fill", d => color(d.data.category))
-      .attr("stroke", "white") // Added stroke attribute for outline
+      .attr("stroke", "white")
       .on("mouseover", function(event, d) {
         tooltip.transition().duration(200).style("opacity", 1);
         tooltip.html(`Name: ${d.data.name}<br>Category: ${d.data.category}<br>Value: ${d.data.value}`)
